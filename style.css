@@ -15,7 +15,7 @@ body {
 
 header.hero {
   background: linear-gradient(to right, #000000c0, #33333380),
-              url('images/img1') center/cover;
+              url('images/img1.jpg') center/cover;
   color: white;
   height: 100vh;
   display: flex;
