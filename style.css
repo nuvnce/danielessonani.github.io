@@ -134,9 +134,9 @@ section {
 }
 
 /* Images par projet */
-.project1 { background-image: url('images/legumes.jpg'); }
+.project1 { background-image: url('images/classification.png'); }
 .project2 { background-image: url('images/ventes.jpg'); }
-.project3 { background-image: url('images/abandon.jpg'); }
+.project3 { background-image: url('images/predict.jpg'); }
 .project4 { background-image: url('images/pipeline.jpg'); }
 
 /* Boutons */
