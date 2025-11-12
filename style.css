@@ -90,8 +90,21 @@ section {
 
 .projects {
   background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Les cartes projet */
 .project-card {
   position: relative;
   background-size: cover;
@@ -103,8 +116,6 @@ section {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: 1.5rem auto;
-  max-width: 700px;
   transition: transform 0.3s ease;
 }
 
@@ -122,14 +133,11 @@ section {
   text-align: center;
 }
 
-/* Images spécifiques à chaque projet */
-.project1 {
-  background-image: url('images/legumes.jpg');
-}
-
-.project2 {
-  background-image: url('images/ventes.jpg');
-}
+/* Images par projet */
+.project1 { background-image: url('images/legumes.jpg'); }
+.project2 { background-image: url('images/ventes.jpg'); }
+.project3 { background-image: url('images/abandon.jpg'); }
+.project4 { background-image: url('images/pipeline.jpg'); }
 
 /* Boutons */
 .btn-small {
@@ -147,15 +155,6 @@ section {
   background: #ff3240;
 }
 
-.btn-small {
-  background: #333;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 1rem;
-  display: inline-block;
-}
 
 .contact ul {
   list-style: none;
