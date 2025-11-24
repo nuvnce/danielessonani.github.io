@@ -24,21 +24,6 @@ header.hero {
   padding: 2rem;
 }
 
-/* Photo + Nom dans le header */
-.profile-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.profile-pic {
-  width: 50px;         /* Ajuste selon la taille que tu veux */
-  height: 50px;
-  border-radius: 50%;  /* Photo ronde */
-  object-fit: cover;   /* Garde le cadrage propre */
-  border: 2px solid #fff3; /* Optionnel : léger outline */
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -197,5 +182,30 @@ footer {
   font-size: 0.9rem;
 }
 
+.about {
+  padding: 4rem 2rem;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* responsive */
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.about-text {
+  flex: 1;
+}
 
 
