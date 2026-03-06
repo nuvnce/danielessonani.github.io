@@ -619,11 +619,18 @@
     }, i * 700);
   });
 
-  // Scroll reveal
+  // Scroll reveal - trigger immediately if already in viewport
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.anim').forEach(el => obs.observe(el));
+  }, { threshold: 0.01, rootMargin: '0px 0px -20px 0px' });
+  document.querySelectorAll('.anim').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('in');
+    } else {
+      obs.observe(el);
+    }
+  });
 
   // Project expand
   function toggleDetails(btn) {
