@@ -169,8 +169,15 @@
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
     @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
-    .anim { opacity: 1; }
-    .anim.in { animation: fadeUp 0.6s ease forwards; }
+    .anim { opacity: 0; animation: fadeUp 0.6s ease forwards; }
+    .anim.d1 { animation-delay: 0.1s; }
+    .anim.d2 { animation-delay: 0.2s; }
+    .anim.d3 { animation-delay: 0.3s; }
+    .anim.d4 { animation-delay: 0.4s; }
+    .anim.d5 { animation-delay: 0.5s; }
+    .anim.d6 { animation-delay: 0.6s; }
+    .anim.d7 { animation-delay: 0.7s; }
+    .anim.d8 { animation-delay: 0.8s; }
 
     @media (max-width: 960px) {
       .hero-grid, .about-grid, .edu-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -208,16 +215,16 @@
   <div class="hero-grid">
     <div>
       <div class="hero-badge anim"><span class="badge-dot"></span>Data Scientist · Big Data · Machine Learning</div>
-      <h1 class="anim" style="animation-delay:0.1s">Daniel<br><span class="grad">Essonani.</span></h1>
-      <p class="hero-desc anim" style="animation-delay:0.2s">
+      <h1 class="anim" class="d1">Daniel<br><span class="grad">Essonani.</span></h1>
+      <p class="hero-desc anim" class="d2">
         Ingénieur Data spécialisé en <em>Machine Learning</em>, <em>ETL</em> et architectures <em>Big Data</em>. Je développe des solutions IA (LLM, RAG, chatbots) et transforme les données terrain en décisions concrètes.
       </p>
-      <div class="hero-meta anim" style="animation-delay:0.25s">
+      <div class="hero-meta anim" class="d2">
         <div class="hero-meta-item">📍 <span>Agoè Légbassito, Togo</span></div>
         <div class="hero-meta-item">📱 <span>+228 70 40 30 42</span></div>
         <div class="hero-meta-item">🌐 <span>Remote / Mobilité OK</span></div>
       </div>
-      <div class="hero-btns anim" style="animation-delay:0.3s">
+      <div class="hero-btns anim" class="d3">
         <a href="#projects" class="btn-blue">Voir les projets →</a>
         <a href="#contact" class="btn-ghost">Me contacter</a>
       </div>
@@ -252,11 +259,11 @@
         <h4><span>🤖</span> IA & Machine Learning</h4>
         <p>Développement de solutions IA avancées : LLM, fine-tuning, RAG, prompt engineering. Construction de chatbots intelligents avec LangChain et intégration de l'IA dans des systèmes métier réels.</p>
       </div>
-      <div class="info-card anim" style="animation-delay:0.1s">
+      <div class="info-card anim" class="d1">
         <h4><span>⚙️</span> Big Data & ETL</h4>
         <p>Conception de pipelines ETL robustes, gestion de données multi-sources, administration de bases de données et traitement à grande échelle avec Apache Spark et les architectures distribuées.</p>
       </div>
-      <div class="info-card anim" style="animation-delay:0.2s">
+      <div class="info-card anim" class="d2">
         <h4><span>📊</span> Data Management terrain</h4>
         <p>Expérience concrète en gestion de données épidémiologiques, calcul d'indicateurs, reporting BI et formation d'équipes terrain aux outils de collecte (KoboToolbox, Survey Solutions).</p>
       </div>
@@ -368,7 +375,7 @@
         <div class="skill-item"><span class="skill-chevron">›</span>Matplotlib</div>
       </div>
     </div>
-    <div class="skill-card anim" style="animation-delay:0.35s">
+    <div class="skill-card anim" class="d3">
       <div class="skill-card-header"><span class="skill-cat blue">Collecte & Reporting</span><span class="skill-icon">◈</span></div>
       <div class="skill-items">
         <div class="skill-item"><span class="skill-chevron">›</span>KoboToolbox</div>
@@ -404,7 +411,7 @@
       </ul>
     </div>
 
-    <div class="timeline-item anim" style="animation-delay:0.1s">
+    <div class="timeline-item anim" class="d1">
       <div class="timeline-dot"></div>
       <div class="timeline-date">Avril 2025 – Octobre 2025</div>
       <div class="timeline-title">Responsable Marketing</div>
@@ -417,7 +424,7 @@
       </ul>
     </div>
 
-    <div class="timeline-item anim" style="animation-delay:0.2s">
+    <div class="timeline-item anim" class="d2">
       <div class="timeline-dot"></div>
       <div class="timeline-date">Septembre 2024 – Décembre 2024</div>
       <div class="timeline-title">Stagiaire IA</div>
@@ -465,7 +472,7 @@
       </div>
     </div>
 
-    <div class="proj-card anim" style="animation-delay:0.1s">
+    <div class="proj-card anim" class="d1">
       <div class="proj-img-wrap">
         <img class="proj-img" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="Chatbot IA" loading="lazy">
         <div class="proj-img-overlay"></div>
@@ -508,7 +515,7 @@
       </div>
     </div>
 
-    <div class="proj-card anim" style="animation-delay:0.2s">
+    <div class="proj-card anim" class="d2">
       <div class="proj-img-wrap">
         <img class="proj-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Crypto Geopolitics" loading="lazy">
         <div class="proj-img-overlay"></div>
@@ -549,7 +556,7 @@
       <div class="edu-school">Université Catholique de l'Afrique de l'Ouest<br>(UCAO-UUT) — Lomé, Togo</div>
       <div class="edu-year">2023 – 2026</div>
     </div>
-    <div class="edu-card anim" style="animation-delay:0.1s">
+    <div class="edu-card anim" class="d1">
       <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--green);margin-bottom:12px;letter-spacing:0.08em;">DIPLÔMÉ ✓</div>
       <div class="edu-degree">Licence en Mathématique et Informatique</div>
       <div class="edu-school">Université Catholique de l'Afrique de l'Ouest<br>(UCAO-UUT) — Lomé, Togo</div>
@@ -566,8 +573,8 @@
   <div class="contact-glow"></div>
   <div style="position:relative;z-index:1;">
     <h2 class="contact-title anim">Prêt à construire<br>le <span class="accent">futur</span> ?</h2>
-    <p class="contact-sub anim" style="animation-delay:0.1s">Disponible pour des opportunités de stage, CDD ou collaboration sur des projets data &amp; IA ambitieux. Remote ou mobilité possible.</p>
-    <div class="contact-btns anim" style="animation-delay:0.2s">
+    <p class="contact-sub anim" class="d1">Disponible pour des opportunités de stage, CDD ou collaboration sur des projets data &amp; IA ambitieux. Remote ou mobilité possible.</p>
+    <div class="contact-btns anim" class="d2">
       <a href="/cdn-cgi/l/email-protection#31425e5d585c5442425e5f505f5871565c50585d1f525e5c" class="btn-white">✉ <span class="__cf_email__" data-cfemail="f88b979491959d8b8b9796999691b89f95999194d69b9795">[email&#160;protected]</span></a>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/daniel-essonani-208047369/" target="_blank" class="social-btn" title="LinkedIn">in</a>
@@ -619,11 +626,7 @@
     }, i * 700);
   });
 
-  // Scroll reveal
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
-  }, { threshold: 0.01 });
-  document.querySelectorAll('.anim').forEach(el => obs.observe(el));
+  // Animations handled via CSS
 
   // Project expand
   function toggleDetails(btn) {
